@@ -1,0 +1,120 @@
+<%- include('../admin/navbar') %>
+
+<!-- Inline CSS (image perfect thumbnail) -->
+<style>
+  .contact-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px; /* round हवे तर 50% करा */
+    border: 1px solid #ddd;
+  }
+</style>
+
+<div class="container-fluid mt-4">
+  <div class="row justify-content-center">
+
+    <!-- Contacts Header -->
+    <div class="col-md-7 mx-auto">
+      <div class="bg-primary p-4 rounded">
+        <div class="text-center mb-4">
+          <h1 class="text-white">Contacts</h1>
+        </div>
+
+        <!-- Add Contact Button -->
+        <div class="text-center mb-4">
+          <button class="btn btn-light btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#addContact">
+            Add Contact
+          </button>
+        </div>
+
+        <!-- Add Contact Form -->
+        <form action="/admin/save_contacts" method="post" enctype="multipart/form-data">
+          <div class="collapse" id="addContact">
+            <div class="card card-body">
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <label>Name</label>
+                  <input type="text" name="name" class="form-control" required />
+                </div>
+
+                <div class="col-md-6">
+                  <label>Number</label>
+                  <input type="text" name="number" class="form-control" required />
+                </div>
+
+                <div class="col-md-6">
+                  <label>Email</label>
+                  <input type="email" name="email" class="form-control" />
+                </div>
+
+                <div class="col-md-6">
+                  <label>Address</label>
+                  <input type="text" name="address" class="form-control" />
+                </div>
+
+                <div class="col-md-6">
+                  <label>Image</label>
+                  <input type="file" name="contact_image" class="form-control" />
+                </div>
+
+              </div>
+
+              <div class="mt-4 text-center">
+                <button type="submit" class="btn btn-success btn-md">Save</button>
+              </div>
+
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- Contacts List -->
+    <div class="col-12 mt-5">
+      <h2 class="mb-4">Contacts List</h2>
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th>Name</th>
+            <th>Number</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <% if (contacts && contacts.length > 0) { %>
+
+            <% contacts.forEach(contact => { %>
+              <tr>
+                <td><%= contact.name %></td>
+                <td><%= contact.number %></td>
+                <td><%= contact.email %></td>
+                <td><%= contact.address %></td>
+
+                <td>
+                  <% if (contact.contact_image) { %>
+                    <img src="/uploads/<%= contact.contact_image %>" class="contact-img">
+                  <% } else { %>
+                    <span>No Image</span>
+                  <% } %>
+                </td>
+              </tr>
+            <% }) %>
+
+          <% } else { %>
+            <tr>
+              <td colspan="5" class="text-center">No contacts found.</td>
+            </tr>
+          <% } %>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

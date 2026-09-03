@@ -1,0 +1,48 @@
+<%- include('../admin/navbar') %>
+
+<div class="container mt-4">
+
+  <div class="d-flex align-items-center mb-3 gap-2">
+    <h3 class="mb-0">Student List</h3>
+    <a href="/admin/studentcorner" class="btn btn-success">Add Student</a>
+  </div>
+
+  <% if (data.length > 0) { %>
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover text-center align-middle">
+        <thead class="table-primary">
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% data.forEach((item, index) => { %>
+            <tr>
+              <td><%= index + 1 %></td>
+              <td><%= item.title %></td>
+              <td><%= item.name %></td>
+              <td class="text-start"><%= item.address %></td>
+              <td><%= item.mobile %></td>
+
+              <td>
+                <a href="/admin/edit_studentcorner/<%= item.student_id %>" class="btn btn-sm btn-warning">Edit</a>
+                <a href="/admin/delete_studentcorner/<%= item.student_id %>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?')">Delete</a>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+
+      </table>
+    </div>
+
+  <% } else { %>
+    <p class="text-center text-muted">No Student Records Found.</p>
+  <% } %>
+
+</div>

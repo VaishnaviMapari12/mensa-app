@@ -1,0 +1,63 @@
+<%- include('../admin/navbar') %>
+
+<div class="container-fluid mt-4">
+  <div class="row">
+    <!-- Left sidebar already included via navbar -->
+    <div class="col-md-2"></div>
+
+    <!-- Main content -->
+    <div class="col-md-10">
+
+      <h3 class="mb-3">Slider Management</h3>
+
+      <!-- Add New Slider Button -->
+      <button class="btn btn-success mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#sliderForm">
+        Add New Slider
+      </button>
+      <!-- Slider List Button -->
+<a href="/admin/slider_list" class="btn btn-primary mb-3 ms-2">
+  Slider List
+</a>
+
+      <!-- Collapse Form -->
+      <div class="collapse" id="sliderForm">
+        <div class="card shadow p-4 mb-4">
+
+          <form action="/admin/save_slider" method="post" enctype="multipart/form-data">
+
+            <div class="mb-3">
+              <label><b>Slider Name</b></label>
+              <input type="text" name="slider_name" class="form-control" required>
+            </div>
+
+            <div class="row">
+              <!-- Left Image -->
+              <div class="col-md-6 mb-3">
+                <label><b>Logo Image</b></label>
+                <input type="file" name="left_image" class="form-control" required>
+              </div>
+
+              <!-- Right Images -->
+              <div class="col-md-6">
+                <div class="row">
+                  <% for(let i=1;i<=4;i++){ %>
+                    <div class="col-6 mb-3">
+                      <label>Image <%= i %></label>
+                      <input type="file" name="right_image<%= i %>" class="form-control" required>
+                    </div>
+                  <% } %>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-3">
+              <button type="submit" class="btn btn-primary">Save Slider</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

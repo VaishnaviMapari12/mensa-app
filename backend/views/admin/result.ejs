@@ -1,0 +1,45 @@
+<%- include('navbar') %>
+
+<div class="container-fluid mt-4">
+  <div class="row">
+
+    <!-- Sidebar placeholder -->
+    <div class="col-md-2">
+      <!-- Sidebar (optional) -->
+    </div>
+
+    <!-- Main content (Add Result Form) -->
+    <div class="col-md-10">
+      <div class="d-flex align-items-center mb-3 gap-2">
+        <h3 class="mb-0">Add Result</h3>
+        <a href="/admin/result_list" class="btn btn-primary">List Results</a>
+      </div>
+
+      <div class="card shadow p-4 mb-4">
+        <h4 class="text-center mb-4">Add New Result</h4>
+
+        <form action="/admin/results/add" method="post" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label><b>Title</b></label>
+            <input type="text" name="title" class="form-control form-control-lg" required>
+          </div>
+
+          <div class="mb-3">
+            <label><b>Name / Caption</b></label>
+            <input type="text" name="name" class="form-control form-control-lg" placeholder="Enter name or caption" required>
+          </div>
+
+          <div class="mb-3">
+            <label><b>Result Image</b></label>
+            <input type="file" name="image" class="form-control form-control-lg" required>
+          </div>
+
+          <div class="text-center mt-3">
+            <button type="submit" class="btn btn-success btn-lg">Save Result</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>

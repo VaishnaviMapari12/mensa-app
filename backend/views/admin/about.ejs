@@ -1,0 +1,60 @@
+<%- include('../admin/navbar') %>
+
+<style>
+@keyframes slideFromRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-right {
+  animation: slideFromRight 0.5s ease forwards;
+}
+
+.full-width-card {
+  width: 100%;
+  max-width: 800px;
+}
+</style>
+
+<div class="container mt-5"><!-- ⭐ mt-5 added -->
+
+  <!-- ⭐ BOTH BUTTONS AT START (LEFT) ⭐ -->
+  <div class="d-flex justify-content-start gap-2 mb-3 mr-3">
+    <a href="/admin/about_list" class="btn btn-success">About List</a>
+
+    <button class="btn btn-primary" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#addAboutCollapse" 
+            aria-expanded="false" 
+            aria-controls="addAboutCollapse">
+      Add About
+    </button>
+  </div>
+
+  <!-- ⭐ COLLAPSIBLE ADD ABOUT FORM -->
+  <div class="collapse" id="addAboutCollapse">
+    <div class="card card-body slide-right full-width-card mx-auto">
+
+      <form action="/admin/save_about" method="post" enctype="multipart/form-data">
+
+        <div class="mb-3">
+          <label><b>About Description</b></label>
+          <textarea name="about_description" class="form-control mb-3" rows="3"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label><b>About Image</b></label>
+          <input type="file" name="about_image" class="form-control mb-3">
+        </div>
+
+        <div class="text-start">
+          <button class="btn btn-primary" type="submit">Save About</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>

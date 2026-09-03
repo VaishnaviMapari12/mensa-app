@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f4f6f9;
+      font-family: Arial;
+    }
+
+    .settings-box {
+      max-width: 700px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    }
+
+    .settings-title {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .btn-save {
+      background: #0d6efd;
+      color: #fff;
+    }
+
+    .btn-save:hover {
+      background: #0b5ed7;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="settings-box">
+
+  <h4 class="settings-title">⚙️ Website Settings</h4>
+  <hr>
+
+  <form>
+
+    <!-- Site Name -->
+    <div class="mb-3">
+      <label class="form-label">Website Name</label>
+      <input type="text" class="form-control" placeholder="Enter website name">
+    </div>
+
+    <!-- Email -->
+    <div class="mb-3">
+      <label class="form-label">Admin Email</label>
+      <input type="email" class="form-control" placeholder="Enter email">
+    </div>
+
+    <!-- Contact Number -->
+    <div class="mb-3">
+      <label class="form-label">Contact Number</label>
+      <input type="text" class="form-control" placeholder="Enter number">
+    </div>
+
+    <!-- Logo Upload -->
+    <div class="mb-3">
+      <label class="form-label">Upload Logo</label>
+      <input type="file" class="form-control">
+    </div>
+
+    <!-- Address -->
+    <div class="mb-3">
+      <label class="form-label">Address</label>
+      <textarea class="form-control" rows="3" placeholder="Enter address"></textarea>
+    </div>
+
+    <!-- Button -->
+    <button class="btn btn-save w-100">Save Settings</button>
+
+  </form>
+
+</div>
+
+</body>
+</html>

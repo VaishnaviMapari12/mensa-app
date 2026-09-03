@@ -1,0 +1,9 @@
+/* Results.css */
+
+.border-white {
+  border: 4px solid white;
+}
+
+img.rounded {
+  border-radius: 8px;
+}

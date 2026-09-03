@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+  }
+  
+  /* --- FULL HEIGHT FIXES (VERY IMPORTANT) --- */
+  html, body {
+    height: 100%; /* HTML and Body height should be 100% */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Avoids horizontal scrollbar if content is too wide */
+  }
+  
+  .d-flex {
+    height: 100vh; /* Main container height should be 100% of viewport */
+  }
+  
+  /* LEFT SIDEBAR FULL HEIGHT */
+  .sidebar-left {
+    width: 260px;
+    min-width: 260px;
+    background-color: #1d1d1d; /* Black color for sidebar */
+    
+    /* === THE SOLUTION: HEIGHT AND POSITIONING === */
+    height: 100vh; /* Purna screen chi unchi (100% View Port Height) */
+    position: fixed; /* Tila top-to-bottom thevnyasathi, scroll hot nahi */
+    top: 0;
+    left: 0;
+    /* =========================================== */
+    
+    overflow-y: auto; 
+  }
+  
+  /* SHIFT MAIN CONTENT */
+  .main-content {
+    margin-left: 260px; /* Sidebar chya width itka margin dya */
+    flex-grow: 1;
+    padding: 20px;
+  }
+  /* ------------------------------------------- */
+  
+  .sidebar-left .nav-link {
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 0px; 
+  }
+  
+  .sidebar-left .nav-link:hover {
+    background-color: #495057;
+  }
+  
+  .sidebar-left .nav-link.active {
+      background-color: #343a40; 
+      border-left: 4px solid #007bff; 
+      padding-left: 16px; 
+  }
+  
+  .sidebar-left .dropdown-menu {
+    background-color: #343a40; 
+    border: none;
+  }
+  
+  .sidebar-left .dropdown-item {
+    color: white;
+  }
+  
+  .sidebar-left .dropdown-item:hover {
+    background-color: #6c757d;
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Better shadow */
+    height: 100%;
+  }
+  
+  .card h1 {
+      font-size: 2.5rem;
+      color: #343a40;
+      margin-bottom: 5px;
+  }
+  
+  .card p {
+      margin-top: 5px;
+      font-size: 1rem;
+      color: #6c757d;
+  }
+  
+  .card i {
+      /* Set icon size */
+      font-size: 3em !important; 
+  }
+  
+  /* Specific Card Icons colors (Matching the image) */
+  .col-md-3:nth-child(1) i { color: #66BB6A !important; } /* Students - Green */
+  .col-md-3:nth-child(2) i { color: #42A5F5 !important; } /* Teachers - Blue */
+  .col-md-3:nth-child(3) i { color: #FFA726 !important; } /* Courses - Orange */
+  .col-md-3:nth-child(4) i { color: #EF5350 !important; } /* Performance - Red */

@@ -1,0 +1,59 @@
+<%- include('../admin/navbar') %>
+
+<div class="container mt-4" style="margin-left: 220px;"> <!-- Left sidebar space -->
+  <h3 class="mb-3">Slider List</h3>
+  <a href="/admin/slider" class="btn btn-success mb-3">Add Slider</a>
+
+  <% if (sliderData.length > 0) { %>
+    <div class="table-responsive">
+      <table class="table table-bordered text-center">
+        <thead class="table-primary">
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Left Image</th>
+            <th>Right 1</th>
+            <th>Right 2</th>
+            <th>Right 3</th>
+            <th>Right 4</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% sliderData.forEach((item, index) => { %>
+            <tr>
+              <td><%= index+1 %></td>
+              <td><%= item.slider_name %></td>
+
+              <td>
+                <% if(item.left_image){ %>
+                  <img src="/uploads/<%= item.left_image %>" width="80" height="80" style="object-fit:cover">
+                <% } %>
+              </td>
+
+              <% for(let i=1;i<=4;i++){ %>
+                <td>
+                  <% if(item['right_image'+i]){ %>
+                    <img src="/uploads/<%= item['right_image'+i] %>" width="80" height="80" style="object-fit:cover">
+                  <% } %>
+                </td>
+              <% } %>
+
+              <td>
+                <a href="/admin/edit_slider/<%= item.slider_id %>" class="btn btn-warning btn-sm">Edit</a>
+                <a href="/admin/delete_slider/<%= item.slider_id %>"
+                   class="btn btn-danger btn-sm"
+                   onclick="return confirm('Delete this slider?')">
+                  Delete
+                </a>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  <% } else { %>
+    <p class="text-center text-muted">No sliders found.</p>
+  <% } %>
+</div>

@@ -1,0 +1,71 @@
+<%- include('../admin/navbar') %>
+
+<div class="container-fluid mt-4">
+
+  <!-- Heading + Buttons -->
+  <div class="d-flex align-items-center mb-3 gap-2">
+    <h3 class="mb-0">About Us</h3>
+    <a href="/admin/aboutus_list" class="btn btn-primary">List About</a>
+
+    <!-- Add About Button: Collapsible -->
+    <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#aboutForm" aria-expanded="false" aria-controls="aboutForm">
+      Add About
+    </button>
+  </div>
+
+  <!-- Collapsible Form -->
+  <div class="collapse" id="aboutForm">
+    <div class="card shadow p-4 mb-4" id="aboutCard">
+
+      <h4 class="mb-4 text-center">Add New About Us</h4>
+
+      <form action="/admin/save_aboutus" method="post" enctype="multipart/form-data">
+
+        <!-- Title -->
+        <div class="mb-3">
+          <label><b>Title</b></label>
+          <input type="text" name="title" class="form-control form-control" placeholder="Enter title" required>
+        </div>
+
+        <!-- Icon (Optional FontAwesome class) -->
+        <div class="mb-3">
+          <label><b>Icon (Optional)</b></label>
+          <input type="text" name="icon" class="form-control form-control" placeholder="Enter icon class, e.g. fas fa-user">
+        </div>
+
+        <!-- Description -->
+        <div class="mb-3">
+          <label><b>Description</b></label>
+          <textarea name="description" class="form-control form-control" rows="5" placeholder="Enter description" required></textarea>
+        </div>
+
+        <!-- Image Upload -->
+        <div class="mb-3">
+          <label><b>Image</b></label>
+          <input type="file" name="image" class="form-control form-control" accept="image/*" required>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center mt-3">
+          <button type="submit" class="btn btn-success btn-lg">Save About</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+<style>
+  /* Full-width card adjusted to sidebar */
+  #aboutCard {
+    width: calc(100% - 250px); /* Assuming sidebar width is 250px */
+    margin-left: auto;          /* Align to the right of sidebar */
+  }
+
+  /* Optional: smooth collapse animation */
+  #aboutForm.collapse {
+    transition: all 0.5s ease;
+  }
+</style>

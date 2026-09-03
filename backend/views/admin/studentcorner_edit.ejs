@@ -1,0 +1,58 @@
+<%- include('../admin/navbar') %>
+
+<div class="container mt-4">
+
+  <!-- Heading -->
+  <div class="d-flex align-items-center mb-3 gap-2">
+    <h3 class="mb-0">Edit Student Details</h3>
+    <a href="/admin/studentcorner_list" class="btn btn-primary">Back to List</a>
+  </div>
+
+  <!-- Collapsible Edit Form -->
+  <div class="card shadow p-4">
+
+    <h4 class="text-center mb-4">Update Student</h4>
+
+    <form action="/admin/update_studentcorner/<%= student.student_id %>" method="post">
+
+      <!-- Title -->
+      <div class="mb-3">
+        <label><b>Title</b></label>
+        <input type="text" name="title" value="<%= student.title %>" class="form-control form-control-lg" required>
+      </div>
+
+      <!-- Name -->
+      <div class="mb-3">
+        <label><b>Name</b></label>
+        <input type="text" name="name" value="<%= student.name %>" class="form-control form-control-lg" required>
+      </div>
+
+      <!-- Address -->
+      <div class="mb-3">
+        <label><b>Address</b></label>
+        <textarea name="address" class="form-control form-control-lg" rows="3" required><%= student.address %></textarea>
+      </div>
+
+      <!-- Mobile Number -->
+      <div class="mb-3">
+        <label><b>Mobile Number</b></label>
+        <input type="text" name="mobile" value="<%= student.mobile %>" class="form-control form-control-lg" required>
+      </div>
+
+      <!-- Submit -->
+      <div class="text-center mt-3">
+        <button type="submit" class="btn btn-success btn-lg">Update Student</button>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+<style>
+  .card {
+    width: calc(100% - 250px); /* sidebar adjust */
+    margin-left: auto;
+  }
+</style>

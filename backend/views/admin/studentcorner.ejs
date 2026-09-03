@@ -1,0 +1,73 @@
+<%- include('../admin/navbar') %>
+
+<div class="container mt-4">
+
+  <!-- Heading + Buttons -->
+  <div class="d-flex align-items-center mb-3 gap-2">
+    <h3 class="mb-0">Student Corner</h3>
+
+    <!-- List Button -->
+    <a href="/admin/studentcorner_list" class="btn btn-primary">List Students</a>
+
+    <!-- Collapse Button -->
+    <button class="btn btn-success"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#studentForm"
+            aria-expanded="false"
+            aria-controls="studentForm">
+      Add Student
+    </button>
+  </div>
+
+  <!-- Collapsible Form -->
+  <div class="collapse" id="studentForm">
+    <div class="card shadow p-4 mb-4">
+
+      <h4 class="mb-4 text-center">Add Student Details</h4>
+
+      <form action="/admin/save_studentcorner" method="post">
+
+        <!-- Title -->
+        <div class="mb-3">
+          <label><b>Title</b></label>
+          <input type="text" name="title" class="form-control form-control-lg" required>
+        </div>
+
+        <!-- Name -->
+        <div class="mb-3">
+          <label><b>Name</b></label>
+          <input type="text" name="name" class="form-control form-control-lg" required>
+        </div>
+
+        <!-- Address -->
+        <div class="mb-3">
+          <label><b>Address</b></label>
+          <textarea name="address" class="form-control form-control-lg" rows="3" required></textarea>
+        </div>
+
+        <!-- Mobile Number -->
+        <div class="mb-3">
+          <label><b>Mobile Number</b></label>
+          <input type="text" name="mobile" class="form-control form-control-lg" required>
+        </div>
+
+        <!-- Submit -->
+        <div class="text-center mt-3">
+          <button type="submit" class="btn btn-success btn-lg">Save Student</button>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+<style>
+  /* Collapsible Form Full Width (right side of sidebar) */
+  #studentForm .card {
+    width: calc(100% - 250px); /* Adjust for sidebar */
+    margin-left: auto;
+  }
+</style>

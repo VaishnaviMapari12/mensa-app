@@ -1,0 +1,52 @@
+<%- include('../admin/navbar') %>
+
+<div class="container mt-4">
+
+  <!-- Heading + Add About button -->
+  <div class="d-flex align-items-center mb-3">
+    <h3 class="me-auto">About List</h3>
+    <a href="/admin/about" class="btn btn-primary">Add About</a>
+  </div>
+
+  <% if (aboutData.length > 0) { %>
+
+    <!-- Table -->
+    <div class="table-responsive">
+      <table class="table table-bordered table-hover text-center mx-auto" style="width: 90%;">
+        <thead class="table-primary">
+          <tr>
+            <th>#</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% aboutData.forEach((item, index) => { %>
+            <tr>
+              <td><%= index + 1 %></td>
+              <td class="text-start"><%= item.about_description %></td>
+              <td>
+                <% if (item.about_image && item.about_image !== '') { %>
+                  <img src="/uploads/<%= item.about_image %>" alt="About Image" style="height:80px; width:80px; object-fit:cover; border-radius:5px;">
+                <% } else { %>
+                  N/A
+                <% } %>
+              </td>
+              <td>
+                <a href="/admin/edit_about/<%= item.about_id %>" class="btn btn-sm btn-warning">Edit</a>
+                <a href="/admin/delete_about/<%= item.about_id %>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?')">Delete</a>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+
+  <% } else { %>
+
+    <p class="text-center text-muted">No About content found.</p>
+
+  <% } %>
+
+</div>

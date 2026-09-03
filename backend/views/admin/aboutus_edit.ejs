@@ -1,0 +1,33 @@
+<%- include('../admin/navbar') %>
+
+<div class="container mt-5">
+
+  <h3>Edit About</h3>
+
+  <form action="/admin/update_about/<%= about.about_id %>" method="post" enctype="multipart/form-data">
+
+    <div class="mb-3">
+      <label><b>About Description</b></label>
+      <textarea name="about_description" class="form-control" rows="3">
+        <%= about.about_description %>
+      </textarea>
+    </div>
+
+    <div class="mb-3">
+      <label><b>Current Image</b></label><br>
+      <% if(about.about_image){ %>
+        <img src="/uploads/<%= about.about_image %>" width="150">
+      <% } %>
+    </div>
+
+    <div class="mb-3">
+      <label><b>Change Image</b></label>
+      <input type="file" name="about_image" class="form-control">
+    </div>
+
+    <button class="btn btn-primary">Update</button>
+    <a href="/admin/about_list" class="btn btn-secondary">Back</a>
+
+  </form>
+
+</div>
