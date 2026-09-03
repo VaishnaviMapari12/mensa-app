@@ -1,21 +1,23 @@
-var express = require("express");
 var mysql = require("mysql");
 var util = require("util");
 
-// ---- 1. Create Connection First ----
 var conn = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "websitemansa",
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    port: process.env.DB_PORT || 3306
 });
 
-// ---- 2. Connect to MySQL ----
 conn.connect((err) => {
-    if (err) throw err;
+    if (err) {
+        console.error("Database connection failed:", err.message);
+        return;
+    }
+
     console.log("Database Connected!");
 });
 
-
 var exe = util.promisify(conn.query).bind(conn);
+
 module.exports = conn;
