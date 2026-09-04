@@ -395,7 +395,6 @@
    COURSES
 ========================= */
 
-
 /* Button styling */
 
 .top_menu_btn {
@@ -870,7 +869,7 @@
 }
 
 #text:hover {
-  background-color: rgba(84, 2, 161);
+  background-color: rgba(84, 2, 161, 1);
   color: aliceblue;
   z-index: -1;
   transition: all 0.6s ease;

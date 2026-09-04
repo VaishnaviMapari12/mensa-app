@@ -1,7 +1,16 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
 .about-section {
   width: 100%;
   position: relative;
 }
+
+
+/* =========================
+   ABOUT COUNTER
+========================= */
 
 .about_counter {
   width: 100%;
@@ -13,6 +22,11 @@
   gap: 30px;
 }
 
+
+/* =========================
+   ABOUT CARD
+========================= */
+
 .about-card {
   background: #fff;
   border-radius: 20px;
@@ -20,19 +34,34 @@
   max-width: 300px;
   padding: 40px 20px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+
+/* =========================
+   ABOUT CARD HOVER
+========================= */
+
 .about-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
+
+
+/* =========================
+   ABOUT ICON
+========================= */
 
 .about-icon {
   font-size: 45px;
   color: #4d164c;
 }
+
+
+/* =========================
+   ABOUT HEADING
+========================= */
 
 .about-card h1 {
   margin-top: 15px;
@@ -47,15 +76,19 @@
 }
 
 
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
 @media (max-width: 768px) {
+
   .about_counter {
     margin-top: -60px;
   }
-}
-
 
   .about-card {
     max-width: 90%;
     min-height: 220px;
   }
- 
+
+}
