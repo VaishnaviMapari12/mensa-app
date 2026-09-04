@@ -1,17 +1,9 @@
-/* =========================
-   LOGO
-========================= */
-
 .logo-img {
   height: 60px;
 }
 
 
-/* =========================
-   NAVBAR
-========================= */
-
-.menu-left,
+NAVBAR .menu-left,
 .menu-right {
   gap: 28px;
 }
@@ -45,19 +37,11 @@
 }
 
 
-/* =========================
-   TOP BAR
-========================= */
-
 .top-bar {
   background: #fff;
   border-bottom: 1px solid #e8e8e8;
 }
 
-
-/* =========================
-   ADMISSION BUTTON
-========================= */
 
 .admission-btn {
   background-color: #34085b;
@@ -68,10 +52,6 @@
 }
 
 
-/* =========================
-   SLIDER
-========================= */
-
 .slider-img {
   height: 60vh;
   width: 100%;
@@ -81,11 +61,6 @@
 .carousel-caption {
   bottom: 30%;
 }
-
-
-/* =========================
-   SLIDER SECTION
-========================= */
 
 .slider-section {
   height: 420px;
@@ -108,9 +83,6 @@
 }
 
 
-/* =========================
-   LEFT FIXED IMAGE
-========================= */
 
 .left-fixed-img {
   width: 420px;
@@ -130,10 +102,6 @@
 }
 
 
-/* =========================
-   RIGHT SLIDER
-========================= */
-
 .right-slider {
   flex: 1;
   height: 100%;
@@ -150,9 +118,6 @@
 }
 
 
-/* =========================
-   CAROUSEL CONTROLS
-========================= */
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -160,10 +125,6 @@
   border-radius: 50%;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
 
 .mensa-footer {
   background: #4d164c;
@@ -173,10 +134,6 @@
 }
 
 
-/* =========================
-   FOOTER GRID
-========================= */
-
 .footer-container {
   width: 90%;
   margin: 0 auto;
@@ -184,11 +141,6 @@
   grid-template-columns: 35% 35% 20%;
   gap: 40px;
 }
-
-
-/* =========================
-   FOOTER SECTIONS
-========================= */
 
 .footer-section h3 {
   font-size: 20px;
@@ -204,19 +156,11 @@
 }
 
 
-/* =========================
-   FOOTER LINKS
-========================= */
-
 .footer-section ul {
   list-style: none;
   padding-left: 0;
 }
 
-
-/* =========================
-   FOOTER LOGO
-========================= */
 
 .footer-logo {
   width: 160px;
@@ -225,9 +169,6 @@
 }
 
 
-/* =========================
-   QUICK LINKS
-========================= */
 
 .quicklinks-double {
   gap: 5px;
@@ -255,9 +196,6 @@
 }
 
 
-/* =========================
-   FOOTER BOTTOM
-========================= */
 
 .footer-bottom {
   width: 100%;
@@ -268,11 +206,6 @@
   justify-content: space-between;
   font-size: 14px;
 }
-
-
-/* =========================
-   FOOTER RESPONSIVE
-========================= */
 
 @media (max-width: 992px) {
   .footer-container {
@@ -301,10 +234,6 @@
 }
 
 
-/* =========================
-   ABOUT BANNER
-========================= */
-
 .about-section {
   width: 100%;
   position: relative;
@@ -312,9 +241,6 @@
 }
 
 
-/* =========================
-   ABOUT OVERLAY
-========================= */
 
 .about-section .overlay {
   position: absolute;
@@ -325,10 +251,6 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-
-/* =========================
-   ABOUT COUNTER
-========================= */
 
 .about_counter {
   width: 100%;
@@ -341,10 +263,6 @@
   margin-top: -120px;
 }
 
-
-/* =========================
-   ABOUT CARD
-========================= */
 
 .about-card {
   background: #fff;
@@ -391,9 +309,6 @@
 }
 
 
-/* =========================
-   COURSES
-========================= */
 
 /* Button styling */
 
@@ -403,10 +318,6 @@
   border: none;
 }
 
-
-/* =========================
-   COURSES LAYOUT
-========================= */
 
 .courses-row {
   display: flex;
@@ -427,10 +338,6 @@
 }
 
 
-/* =========================
-   COURSE CARD
-========================= */
-
 .about-card {
   width: 100%;
   max-width: 360px;
@@ -441,9 +348,6 @@
 }
 
 
-/* =========================
-   CARD COLORS
-========================= */
 
 .card1 {
   background: #ffece6;
@@ -466,19 +370,12 @@
 }
 
 
-/* =========================
-   CARD HOVER
-========================= */
-
 .about-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 
-/* =========================
-   COURSE IMAGE
-========================= */
 
 .about-card img {
   height: 70px;
@@ -486,10 +383,6 @@
   object-fit: contain;
 }
 
-
-/* =========================
-   COURSE MOBILE
-========================= */
 
 @media (max-width: 768px) {
 
@@ -499,10 +392,6 @@
   }
 }
 
-
-/* =========================
-   WHY CHOOSE SECTION
-========================= */
 
 .whychoose_icon {
   height: 90px;
@@ -517,9 +406,6 @@
 }
 
 
-/* =========================
-   CARD BODY HOVER
-========================= */
 
 .card.card-body {
   transition: transform 0.3s, box-shadow 0.3s;
@@ -530,10 +416,6 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-
-/* =========================
-   IMPARTING SECTION
-========================= */
 
 .imparting_section {
   padding: 60px 0;
@@ -577,9 +459,6 @@
 }
 
 
-/* =========================
-   BUTTON
-========================= */
 
 .top_menu_btn {
   background-color: #34085b !important;
@@ -597,9 +476,6 @@
 }
 
 
-/* =========================
-   IMPARTING RESPONSIVE
-========================= */
 
 @media (max-width: 768px) {
   .imparting_container {
@@ -620,9 +496,6 @@
 }
 
 
-/* =========================
-   LARGE FORM OVERLAY
-========================= */
 
 .form-overlay {
   position: fixed;
@@ -667,9 +540,6 @@
 }
 
 
-/* =========================
-   ADMISSION BUTTON
-========================= */
 
 .admission-btn {
   background-color: #ff4d4d;
@@ -682,9 +552,6 @@
 }
 
 
-/* =========================
-   WHY COMMERCE
-========================= */
 
 .whycommerce_section {
   padding: 60px 0;
@@ -723,10 +590,6 @@
 }
 
 
-/* =========================
-   WHY COMMERCE RESPONSIVE
-========================= */
-
 @media (max-width: 768px) {
   .whycommerce_section .col-md-6 {
     flex: 0 0 100%;
@@ -742,11 +605,6 @@
     height: 250px;
   }
 }
-
-
-/* =========================
-   GALLERY
-========================= */
 
 .gallery_section {
   padding: 60px 0;
@@ -825,10 +683,6 @@
 }
 
 
-/* =========================
-   TESTIMONIALS
-========================= */
-
 #scroll {
   display: flex;
   flex-wrap: nowrap;
@@ -889,10 +743,6 @@
 }
 
 
-/* =========================
-   NAVBAR JSX / ABOUT BG
-========================= */
-
 .about-bg {
   background-color: gainsboro;
   background-size: cover;
@@ -901,9 +751,6 @@
 }
 
 
-/* =========================
-   COUNTER
-========================= */
 
 .counter-section {
   padding: 5px;
@@ -916,9 +763,6 @@
 }
 
 
-/* =========================
-   COUNTER ROW
-========================= */
 
 .counter-row {
   display: flex;
@@ -929,10 +773,6 @@
   margin-top: 100px;
 }
 
-
-/* =========================
-   INDIVIDUAL CARD
-========================= */
 
 .card-item {
   flex: 1;
@@ -950,9 +790,6 @@
 }
 
 
-/* =========================
-   CARD COLORS
-========================= */
 
 .card-item:nth-child(even) {
   background-color: #6416a4;
@@ -962,11 +799,6 @@
   background-color: #6416a4;
 }
 
-
-/* =========================
-   CARD 2
-========================= */
-
 .card-item.card-2 {
   transform: translateY(-60px);
   z-index: 10;
@@ -975,9 +807,6 @@
 }
 
 
-/* =========================
-   CARD 1 & 3
-========================= */
 
 .card-item.card-1,
 .card-item.card-3 {
@@ -986,10 +815,6 @@
   position: relative;
 }
 
-
-/* =========================
-   CARD CONTENT
-========================= */
 
 .card-icon {
   font-size: 20px;
@@ -1006,10 +831,6 @@
   font-size: 16px;
 }
 
-
-/* =========================
-   COUNTER RESPONSIVE
-========================= */
 
 @media (max-width: 1024px) {
   .counter-row {
