@@ -1,10 +1,18 @@
-LOGO CENTER FIX
+/* =========================
+   LOGO
+========================= */
+
 .logo-img {
   height: 60px;
 }
 
-/* Hide menus on mobile */
-.menu-left, .menu-right {
+
+/* =========================
+   NAVBAR
+========================= */
+
+.menu-left,
+.menu-right {
   gap: 28px;
 }
 
@@ -16,7 +24,7 @@ LOGO CENTER FIX
 }
 
 .admission-btn {
-  background: #4d164c !important; /* Footer सारखाच रंग */
+  background: #4d164c !important;
   color: white !important;
   border: none;
   padding: 6px 18px;
@@ -33,15 +41,23 @@ LOGO CENTER FIX
 .active-menu,
 .active-menu a,
 .nav-link.active-menu {
-  color: white !important;   /* Force white text */
+  color: white !important;
 }
 
 
-/* TOP BAR */
+/* =========================
+   TOP BAR
+========================= */
+
 .top-bar {
   background: #fff;
   border-bottom: 1px solid #e8e8e8;
 }
+
+
+/* =========================
+   ADMISSION BUTTON
+========================= */
 
 .admission-btn {
   background-color: #34085b;
@@ -50,73 +66,61 @@ LOGO CENTER FIX
   padding: 6px 20px;
   border-radius: 6px;
 }
-/* slider */
+
+
+/* =========================
+   SLIDER
+========================= */
+
 .slider-img {
   height: 60vh;
   width: 100%;
   object-fit: cover;
 }
+
 .carousel-caption {
   bottom: 30%;
 }
-/* sliderrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr */
-/* .slider-section {
-  height: 420px;
-  overflow: hidden;
-}
 
-.left-fixed-img {
-  height: 420px;
-  background: #34085b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.left-img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
+/* =========================
+   SLIDER SECTION
+========================= */
 
-.slider-img {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-}
-
-.carousel-item {
-  height: 420px;
-} */
-/* Slider Section */
 .slider-section {
   height: 420px;
   display: flex;
   overflow: hidden;
-  margin: 0;          /* ← margin zero करा */
-  padding: 0;         /* ← padding zero करा */
-}
-.slider-section, .about-section {
   margin: 0;
   padding: 0;
 }
-.left-img, .slider-img {
-  display: block;   /* inline gap remove */
-  line-height: 0;   /* extra space काढण्यासाठी */
+
+.slider-section,
+.about-section {
+  margin: 0;
+  padding: 0;
+}
+
+.left-img,
+.slider-img {
+  display: block;
+  line-height: 0;
 }
 
 
+/* =========================
+   LEFT FIXED IMAGE
+========================= */
 
-/* Left Fixed Image */
 .left-fixed-img {
-  width: 420px;           /* fixed width */
-  height: 100%;           /* full slider height */
+  width: 420px;
+  height: 100%;
   background: #34085b;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  flex-shrink: 0;         /* don't shrink */
+  flex-shrink: 0;
 }
 
 .left-img {
@@ -125,9 +129,13 @@ LOGO CENTER FIX
   object-fit: cover;
 }
 
-/* Right Slider */
+
+/* =========================
+   RIGHT SLIDER
+========================= */
+
 .right-slider {
-  flex: 1;                /* remaining width */
+  flex: 1;
   height: 100%;
 }
 
@@ -141,25 +149,34 @@ LOGO CENTER FIX
   height: 100%;
 }
 
-/* Carousel Controls */
+
+/* =========================
+   CAROUSEL CONTROLS
+========================= */
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0,0,0,0.5); /* dark overlay on arrows */
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
 }
 
 
-/* footer ////////////////////////////////////////////////////////////////////////////// */
+/* =========================
+   FOOTER
+========================= */
 
-/* MAIN FOOTER BOX */
 .mensa-footer {
   background: #4d164c;
   color: #fff;
   padding: 50px 0 20px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-/* FOOTER GRID */
+
+/* =========================
+   FOOTER GRID
+========================= */
+
 .footer-container {
   width: 90%;
   margin: 0 auto;
@@ -168,7 +185,11 @@ LOGO CENTER FIX
   gap: 40px;
 }
 
-/* SECTIONS */
+
+/* =========================
+   FOOTER SECTIONS
+========================= */
+
 .footer-section h3 {
   font-size: 20px;
   margin-bottom: 15px;
@@ -182,29 +203,41 @@ LOGO CENTER FIX
   cursor: pointer;
 }
 
-/* LINKS DEFAULT */
+
+/* =========================
+   FOOTER LINKS
+========================= */
+
 .footer-section ul {
   list-style: none;
   padding-left: 0;
 }
 
-/* LOGO */
+
+/* =========================
+   FOOTER LOGO
+========================= */
+
 .footer-logo {
   width: 160px;
   margin-bottom: 10px;
-  filter: brightness(0) invert(1); /* WHITE LOGO */
+  filter: brightness(0) invert(1);
 }
 
-/* QUICK LINKS TWO COLUMNS */
+
+/* =========================
+   QUICK LINKS
+========================= */
+
 .quicklinks-double {
   gap: 5px;
 }
 
 .ql-wrapper {
   display: flex;
-  justify-content: flex-start;   /* space-between काढून टाका */
+  justify-content: flex-start;
   align-items: flex-start;
-  gap: 20px;   /* EXACT small gap */
+  gap: 20px;
 }
 
 .right-list {
@@ -221,7 +254,11 @@ LOGO CENTER FIX
   text-align: right;
 }
 
-/* BOTTOM BAR */
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
 .footer-bottom {
   width: 100%;
   margin-top: 40px;
@@ -232,7 +269,11 @@ LOGO CENTER FIX
   font-size: 14px;
 }
 
-/* RESPONSIVE */
+
+/* =========================
+   FOOTER RESPONSIVE
+========================= */
+
 @media (max-width: 992px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;
@@ -243,39 +284,52 @@ LOGO CENTER FIX
   .footer-container {
     grid-template-columns: 1fr;
   }
+
   .right-list {
     text-align: left;
   }
+
   .ql-wrapper {
     flex-direction: column;
   }
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;
     gap: 10px;
   }
-}   /* ←←← हे bracket तुटलेलं होतं — मी परत वाढवलं */
+}
 
-/* ABOUT BANNER //////////////////////////////////////////////////////////////////////////////////////*/
-/* ABOUT SECTION BACKGROUND */
-/* About Section */
+
+/* =========================
+   ABOUT BANNER
+========================= */
+
 .about-section {
   width: 100%;
   position: relative;
   z-index: 5;
 }
 
-/* Overlay for dark effect */
+
+/* =========================
+   ABOUT OVERLAY
+========================= */
+
 .about-section .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Counter Cards */
+
+/* =========================
+   ABOUT COUNTER
+========================= */
+
 .about_counter {
   width: 100%;
   position: relative;
@@ -287,6 +341,11 @@ LOGO CENTER FIX
   margin-top: -120px;
 }
 
+
+/* =========================
+   ABOUT CARD
+========================= */
+
 .about-card {
   background: #fff;
   border-radius: 20px;
@@ -294,13 +353,13 @@ LOGO CENTER FIX
   max-width: 300px;
   padding: 40px 20px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
 .about-icon {
@@ -324,6 +383,7 @@ LOGO CENTER FIX
   .about_counter {
     margin-top: -60px;
   }
+
   .about-card {
     max-width: 90%;
     min-height: 220px;
@@ -331,21 +391,24 @@ LOGO CENTER FIX
 }
 
 
+/* =========================
+   COURSES
+========================= */
 
 
-
- 
-
-/* courses ============================//////////////////////////////////////////////////////////*/
 /* Button styling */
-/* Button
+
 .top_menu_btn {
   background-color: #34085b !important;
   color: #fff !important;
   border: none;
 }
 
-/* Layout */
+
+/* =========================
+   COURSES LAYOUT
+========================= */
+
 .courses-row {
   display: flex;
   flex-wrap: wrap;
@@ -364,7 +427,11 @@ LOGO CENTER FIX
   margin-top: 30px;
 }
 
-/* Card base */
+
+/* =========================
+   COURSE CARD
+========================= */
+
 .about-card {
   width: 100%;
   max-width: 360px;
@@ -374,38 +441,70 @@ LOGO CENTER FIX
   transition: 0.3s;
 }
 
-/* --- CARD COLORS --- */
-.card1 { background: #ffece6; }
-.card2 { background: #7aa8e4ff; }
-.card3 { background: #c2f378ff; }
-.card4 { background: #5589d3ff; }
-.card5 { background: #ffece6; }
 
-/* Hover */
+/* =========================
+   CARD COLORS
+========================= */
+
+.card1 {
+  background: #ffece6;
+}
+
+.card2 {
+  background: #7aa8e4ff;
+}
+
+.card3 {
+  background: #c2f378ff;
+}
+
+.card4 {
+  background: #5589d3ff;
+}
+
+.card5 {
+  background: #ffece6;
+}
+
+
+/* =========================
+   CARD HOVER
+========================= */
+
 .about-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Image styling */
+
+/* =========================
+   COURSE IMAGE
+========================= */
+
 .about-card img {
   height: 70px;
   width: 70px;
   object-fit: contain;
 }
 
-/* Mobile */
+
+/* =========================
+   COURSE MOBILE
+========================= */
+
 @media (max-width: 768px) {
+
   .course-col,
   .course-col.second-row {
     flex: 0 0 100%;
   }
-} */
+}
 
 
-/* Navbar.css or separate file for whychoose */
+/* =========================
+   WHY CHOOSE SECTION
+========================= */
 
-/* Circle icon for why choose section */
 .whychoose_icon {
   height: 90px;
   width: 90px;
@@ -418,7 +517,11 @@ LOGO CENTER FIX
   outline: 1px solid white;
 }
 
-/* Optional - card hover effect for attractiveness */
+
+/* =========================
+   CARD BODY HOVER
+========================= */
+
 .card.card-body {
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -428,18 +531,19 @@ LOGO CENTER FIX
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* invipting ========================================================*/
 
-/* Imparting Section Full-Width Left-Right */
+/* =========================
+   IMPARTING SECTION
+========================= */
+
 .imparting_section {
   padding: 60px 0;
-
 }
 
 .imparting_container {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start; /* top align description with image */
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -473,7 +577,11 @@ LOGO CENTER FIX
   margin-bottom: 15px;
 }
 
-/* Button */
+
+/* =========================
+   BUTTON
+========================= */
+
 .top_menu_btn {
   background-color: #34085b !important;
   color: #fff !important;
@@ -489,32 +597,41 @@ LOGO CENTER FIX
   background-color: #230349 !important;
 }
 
-/* Responsive */
+
+/* =========================
+   IMPARTING RESPONSIVE
+========================= */
+
 @media (max-width: 768px) {
   .imparting_container {
     flex-direction: column;
     align-items: center;
   }
+
   .imparting_left,
   .imparting_right {
     flex: 0 0 100%;
     padding-left: 0;
     text-align: center;
   }
+
   .imparting_right p {
     font-size: 1rem;
   }
 }
 
-module css***********************************************************************
-/* Large Form Overlay */
+
+/* =========================
+   LARGE FORM OVERLAY
+========================= */
+
 .form-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6); /* semi-transparent background */
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -527,7 +644,7 @@ module css**********************************************************************
   border-radius: 12px;
   width: 600px;
   max-width: 90%;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
@@ -550,6 +667,11 @@ module css**********************************************************************
   color: #333;
 }
 
+
+/* =========================
+   ADMISSION BUTTON
+========================= */
+
 .admission-btn {
   background-color: #ff4d4d;
   color: white;
@@ -559,9 +681,13 @@ module css**********************************************************************
 .admission-btn:hover {
   background-color: #e60000;
 }
-/* why=============================================================== */
-.whycommerce_section {
 
+
+/* =========================
+   WHY COMMERCE
+========================= */
+
+.whycommerce_section {
   padding: 60px 0;
 }
 
@@ -594,63 +720,82 @@ module css**********************************************************************
 
 .video_wrapper iframe {
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive */
+
+/* =========================
+   WHY COMMERCE RESPONSIVE
+========================= */
+
 @media (max-width: 768px) {
   .whycommerce_section .col-md-6 {
     flex: 0 0 100%;
     max-width: 100%;
     text-align: center;
   }
+
   .whycommerce_list li {
     text-align: left;
   }
+
   .video_wrapper iframe {
     height: 250px;
   }
 }
-/* gallery ----------------------------------------------------------*/
 
-/* Gallery Section */
+
+/* =========================
+   GALLERY
+========================= */
+
 .gallery_section {
   padding: 60px 0;
   background-color: #f9f9f9;
 }
 
+
 /* Gallery Title */
+
 .gallery_section h1 {
-  font-size: 3.5rem; /* Motha heading size */
+  font-size: 3.5rem;
   font-weight: 700;
   color: #34085b;
   margin-bottom: 50px;
   text-align: center;
 }
 
+
 /* Gallery Images */
+
 .gallery_img {
   width: 100%;
   height: auto;
-  border: 5px solid #fff; /* White border */
+  border: 5px solid #fff;
   border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Shadow */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Animation */
+
+/* Gallery Hover */
+
 .gallery_img:hover {
-  transform: scale(1.05); /* Zoom effect */
+  transform: scale(1.05);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
 }
 
+
 /* Column Gap */
-.row > [class*="col-"] {
+
+.row>[class*="col-"] {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-/* Responsive Adjustments */
+
+/* Gallery Responsive */
+
 @media (max-width: 992px) {
   .gallery_section h1 {
     font-size: 3rem;
@@ -679,25 +824,27 @@ module css**********************************************************************
     border: 3px solid #fff;
   }
 }
-/* Testimonials ------------------------------------------------ */
 
 
+/* =========================
+   TESTIMONIALS
+========================= */
 
 #scroll {
   display: flex;
-  flex-wrap: nowrap;     
-  overflow-x: auto;        
+  flex-wrap: nowrap;
+  overflow-x: auto;
   overflow-y: hidden;
-  scroll-behavior: smooth; 
-  padding-bottom: 20px;    
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
 }
 
-#scroll > div {
-  min-width: 350px;      
-  margin-right: 30px;      
+#scroll>div {
+  min-width: 350px;
+  margin-right: 30px;
 }
 
-#bg{
+#bg {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -709,29 +856,31 @@ module css**********************************************************************
   position: relative;
   z-index: 5;
 }
-#text{
-     text-align: justify;
-     margin-top:-40px;
-     color:black;
-     z-index: -1;
-     transition: all 0.6s ease;
-     }
-#text p{
-     justify-content:center;
-          
+
+#text {
+  text-align: justify;
+  margin-top: -40px;
+  color: black;
+  z-index: -1;
+  transition: all 0.6s ease;
 }
-#text:hover{
-     background-color: rgba(84, 2, 161);
-     color: aliceblue;
-     z-index: -1;
-     transition: all 0.6s ease;
+
+#text p {
+  justify-content: center;
 }
-#userlogo{
-     margin: 0 auto;  
-     margin-top: -70px;
+
+#text:hover {
+  background-color: rgba(84, 2, 161);
+  color: aliceblue;
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+#userlogo {
+  margin: 0 auto;
+  margin-top: -70px;
   height: 100px;
   width: 100px;
-  
   border-radius: 50%;
   background-color: white;
   color: rgb(3, 160, 147);
@@ -740,115 +889,140 @@ module css**********************************************************************
   align-items: center;
 }
 
-/* navbar jsx =========================================*/
+
+/* =========================
+   NAVBAR JSX / ABOUT BG
+========================= */
+
 .about-bg {
- background-color: gainsboro;
+  background-color: gainsboro;
   background-size: cover;
   background-position: center;
   min-height: 50px;
 }
 
-/* couter */
+
+/* =========================
+   COUNTER
+========================= */
 
 .counter-section {
-   
-    padding: 5;
-   
+  padding: 5px;
 }
 
 .container {
-    width: 90%; 
-    max-width: 1200px; 
-    margin: 0 auto;
-    
-    
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+
+/* =========================
+   COUNTER ROW
+========================= */
 
 .counter-row {
-    display: flex; 
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0; /* कार्ड्समध्ये जागा नाही */
-    position: relative; 
-    margin-top: 100px; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+  position: relative;
+  margin-top: 100px;
 }
 
-/* 2. Individual Card Styling - उंची आणि रुंदी वाढवण्यासाठी */
+
+/* =========================
+   INDIVIDUAL CARD
+========================= */
+
 .card-item {
-    flex: 1; /* Makes all cards equal width */
-    min-width: 280px; /* किमान रुंदी वाढवली */
-    
-    /* उंची वाढवण्यासाठी min-height चा वापर */
-    min-height: 250px; 
-    
-    padding: 30px 20px;
-    color: white;
-    text-align: center;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow जास्त स्पष्ट केला */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* स्मूथ ऍनिमेशनसाठी */
-    display: flex; /* content मध्यभागी आणण्यासाठी */
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  min-width: 280px;
+  min-height: 250px;
+  padding: 30px 20px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* रंगांची योजना */
-.card-item:nth-child(even) { 
-    background-color: #6416a4; /* गडद जांभळा (मध्य कार्ड) */
+
+/* =========================
+   CARD COLORS
+========================= */
+
+.card-item:nth-child(even) {
+  background-color: #6416a4;
 }
 
-.card-item:nth-child(odd) { 
-    background-color: #6416a4; /* फिकट जांभळा */
+.card-item:nth-child(odd) {
+  background-color: #6416a4;
 }
 
-/* 3. Achieving the Sliding/Lifting Effect (वरून उचललेले) */
-/* Card 2 (Direct Tax) ला वर उचलणे */
-.card-item.card-2 { 
-    /* महत्वाचे: translateY चा आकडा वाढवला, जेणेकरून ते अधिक वर उचललेले दिसेल */
-    transform: translateY(-60px); 
-    z-index: 10; /* सर्वात वर ठेवण्यासाठी */
-    position: relative;
-   
-    min-height: 300px; 
+
+/* =========================
+   CARD 2
+========================= */
+
+.card-item.card-2 {
+  transform: translateY(-60px);
+  z-index: 10;
+  position: relative;
+  min-height: 300px;
 }
 
+
+/* =========================
+   CARD 1 & 3
+========================= */
 
 .card-item.card-1,
 .card-item.card-3 {
-    transform: translateY(-30px); /* थोडं वर उचलणे */
-    z-index: 5; /* Card 2 पेक्षा कमी */
-    position: relative;
+  transform: translateY(-30px);
+  z-index: 5;
+  position: relative;
 }
 
-/* 4. Content Styles */
+
+/* =========================
+   CARD CONTENT
+========================= */
+
 .card-icon {
-    font-size: 20px; /* आयकॉनचा आकार वाढवला */
-    margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 .card-title {
-    font-size: 20px; /* Title चा आकार वाढवला */
-    font-weight: 700;
-    margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .card-details {
-    font-size: 16px; /* Details चा आकार वाढवला */
+  font-size: 16px;
 }
 
-/* --- Responsive adjustments (For smaller screens) --- */
-@media (max-width: 1024px) {
-    .counter-row {
-        flex-direction: column; 
-        align-items: stretch;
-        margin-top: 20px; /* मोबाइलवर ओव्हरलॅप काढला */
-    }
 
-    .card-item {
-        /* मोबाईलवर सर्व overlapping effect रद्द करा */
-        transform: none !important; 
-        z-index: auto !important;
-        min-height: 180px; /* मोबाईलसाठी उंची कमी */
-        margin-bottom: 10px;
-    }
+/* =========================
+   COUNTER RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .counter-row {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 20px;
+  }
+
+  .card-item {
+    transform: none !important;
+    z-index: auto !important;
+    min-height: 180px;
+    margin-bottom: 10px;
+  }
 }
